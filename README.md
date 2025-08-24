@@ -27,3 +27,12 @@ The goal was to build a mini **Security Information & Event Management (SIEM) la
    | stats count by src_ip
    | where count >= 5
 4. Set up a real-time alert (“SSH Brute Force Detection”) to trigger when >=5 failed logins occur from the same IP.
+##  Results
+
+Detection of brute force attempts in Splunk:
+
+![Splunk Query](images/screenshot1.png)
+
+Real-time alert setup:
+
+![Splunk Alert](images/screenshot2.png)
